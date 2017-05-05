@@ -11786,7 +11786,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -11990,7 +11990,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12099,7 +12099,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">model_inputs</span><span class="p">():</span>
@@ -12153,7 +12153,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">process_decoding_input</span><span class="p">(</span><span class="n">target_data</span><span class="p">,</span> <span class="n">target_vocab_to_int</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">):</span>
@@ -12207,7 +12207,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">encoding_layer</span><span class="p">(</span><span class="n">rnn_inputs</span><span class="p">,</span> <span class="n">rnn_size</span><span class="p">,</span> <span class="n">num_layers</span><span class="p">,</span> <span class="n">keep_prob</span><span class="p">):</span>
@@ -12265,7 +12265,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">decoding_layer_train</span><span class="p">(</span><span class="n">encoder_state</span><span class="p">,</span> <span class="n">dec_cell</span><span class="p">,</span> <span class="n">dec_embed_input</span><span class="p">,</span> <span class="n">sequence_length</span><span class="p">,</span> <span class="n">decoding_scope</span><span class="p">,</span>
@@ -12331,7 +12331,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">decoding_layer_infer</span><span class="p">(</span><span class="n">encoder_state</span><span class="p">,</span> <span class="n">dec_cell</span><span class="p">,</span> <span class="n">dec_embeddings</span><span class="p">,</span> <span class="n">start_of_sequence_id</span><span class="p">,</span> <span class="n">end_of_sequence_id</span><span class="p">,</span>
@@ -12405,7 +12405,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">decoding_layer</span><span class="p">(</span><span class="n">dec_embed_input</span><span class="p">,</span> <span class="n">dec_embeddings</span><span class="p">,</span> <span class="n">encoder_state</span><span class="p">,</span> <span class="n">vocab_size</span><span class="p">,</span> <span class="n">sequence_length</span><span class="p">,</span> <span class="n">rnn_size</span><span class="p">,</span>
@@ -12432,26 +12432,17 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
     <span class="n">cell</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">rnn</span><span class="o">.</span><span class="n">MultiRNNCell</span><span class="p">([</span><span class="n">lstm</span><span class="p">]</span><span class="o">*</span><span class="n">num_layers</span><span class="p">)</span>
     <span class="n">cell</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">rnn</span><span class="o">.</span><span class="n">DropoutWrapper</span><span class="p">(</span><span class="n">cell</span><span class="p">,</span> <span class="n">output_keep_prob</span><span class="o">=</span><span class="n">keep_prob</span><span class="p">)</span>
 
-<span class="c1">#     output_fn = lambda logits: tf.nn.softmax(logits)</span>
     <span class="n">output_fn</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">fully_connected</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">vocab_size</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="n">scope</span><span class="o">=</span><span class="n">decoding_scope</span><span class="p">)</span>
 
     
     <span class="k">with</span> <span class="n">tf</span><span class="o">.</span><span class="n">variable_scope</span><span class="p">(</span><span class="s1">&#39;decoding&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">decoding_scope</span><span class="p">:</span>
         <span class="n">train_logits</span> <span class="o">=</span> <span class="n">decoding_layer_train</span><span class="p">(</span><span class="n">encoder_state</span><span class="p">,</span> <span class="n">cell</span><span class="p">,</span> <span class="n">dec_embed_input</span><span class="p">,</span> <span class="n">sequence_length</span><span class="p">,</span> 
                                             <span class="n">decoding_scope</span><span class="p">,</span> <span class="n">output_fn</span><span class="p">,</span> <span class="n">keep_prob</span><span class="p">)</span>
-        <span class="c1">#train_logits =  output_fn(train_pred)</span>
-
     
     <span class="k">with</span> <span class="n">tf</span><span class="o">.</span><span class="n">variable_scope</span><span class="p">(</span><span class="s1">&#39;decoding&#39;</span><span class="p">,</span> <span class="n">reuse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="k">as</span> <span class="n">infer_scope</span><span class="p">:</span>
         <span class="n">infer_logits</span> <span class="o">=</span> <span class="n">decoding_layer_infer</span><span class="p">(</span><span class="n">encoder_state</span><span class="p">,</span> <span class="n">cell</span><span class="p">,</span> <span class="n">dec_embeddings</span><span class="p">,</span> <span class="n">start_of_sequence_id</span><span class="p">,</span>
                                             <span class="n">end_of_sequence_id</span><span class="p">,</span> <span class="n">sequence_length</span><span class="p">,</span> <span class="n">vocab_size</span><span class="p">,</span> <span class="n">infer_scope</span><span class="p">,</span>
                                             <span class="n">output_fn</span><span class="p">,</span> <span class="n">keep_prob</span><span class="p">)</span>
-        <span class="c1">#infer_logits =  output_fn(infer_pred)</span>
-        
-<span class="c1">#     with tf.variable_scope(&#39;decoding&#39;, reuse=True) as decoding_scope:</span>
-<span class="c1">#         infer_logits = decoding_layer_infer(encoder_state, cell, dec_embeddings, start_of_sequence_id,</span>
-<span class="c1">#                                         end_of_sequence_id, sequence_length, vocab_size, decoding_scope,</span>
-<span class="c1">#                                         output_fn, keep_prob)</span>
 
     <span class="k">return</span> <span class="n">train_logits</span><span class="p">,</span> <span class="n">infer_logits</span>
 
@@ -12501,7 +12492,7 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">seq2seq_model</span><span class="p">(</span><span class="n">input_data</span><span class="p">,</span> <span class="n">target_data</span><span class="p">,</span> <span class="n">keep_prob</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">,</span> <span class="n">sequence_length</span><span class="p">,</span> <span class="n">source_vocab_size</span><span class="p">,</span> <span class="n">target_vocab_size</span><span class="p">,</span>
@@ -12524,20 +12515,6 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># TODO: Implement Function</span>
 
-<span class="c1">#     enc_embed_input = tf.contrib.layers.embed_sequence(input_data, source_vocab_size, enc_embedding_size)</span>
-<span class="c1">#     encoder_state = encoding_layer(enc_embed_input, rnn_size, num_layers, keep_prob)</span>
-
-<span class="c1">#     # Decoding layer</span>
-<span class="c1">#     dec_input = process_decoding_input(target_data, target_vocab_to_int, batch_size)</span>
-
-<span class="c1">#     dec_embeddings = tf.Variable(tf.random_uniform([target_vocab_size, dec_embedding_size]))</span>
-<span class="c1">#     dec_embed_input = tf.nn.embedding_lookup(dec_embeddings, dec_input)</span>
-
-<span class="c1">#     train, infer = decoding_layer(dec_embed_input, dec_embeddings, encoder_state, target_vocab_size, sequence_length, rnn_size,</span>
-<span class="c1">#                               num_layers, target_vocab_to_int, keep_prob)</span>
-
-<span class="c1">#     return train, infer</span>
-
     <span class="c1"># Apply embedding to the input data</span>
     <span class="n">embed_input</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">embed_sequence</span><span class="p">(</span><span class="n">input_data</span><span class="p">,</span> <span class="n">source_vocab_size</span><span class="p">,</span> <span class="n">enc_embedding_size</span><span class="p">)</span>
 
@@ -12548,13 +12525,8 @@ les états-unis est parfois occupé en janvier , et il est parfois chaud en nove
     <span class="n">dec_input</span> <span class="o">=</span> <span class="n">process_decoding_input</span><span class="p">(</span><span class="n">target_data</span><span class="p">,</span> <span class="n">target_vocab_to_int</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">)</span>
 
     <span class="c1"># Apply embedding to the target data for the decoder</span>
-    <span class="c1">#dec_embeddings = tf.contrib.layers.embed_sequence(target_data, target_vocab_size, enc_embedding_size)</span>
     <span class="n">dec_embeddings</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">random_uniform</span><span class="p">([</span><span class="n">target_vocab_size</span><span class="p">,</span> <span class="n">dec_embedding_size</span><span class="p">]))</span>
     <span class="n">dec_embed_input</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">embedding_lookup</span><span class="p">(</span><span class="n">dec_embeddings</span><span class="p">,</span> <span class="n">dec_input</span><span class="p">)</span>
-
-    <span class="c1"># Decode the encoded input using your decoding_layer()</span>
-<span class="c1">#     train_logits, infer_logits = decoding_layer(embed_input, dec_embed_input, encoder_state, target_vocab_size,</span>
-<span class="c1">#                sequence_length, rnn_size, num_layers, target_vocab_to_int, keep_prob)</span>
 
     <span class="n">train_logits</span><span class="p">,</span> <span class="n">infer_logits</span> <span class="o">=</span> <span class="n">decoding_layer</span><span class="p">(</span><span class="n">dec_embed_input</span><span class="p">,</span> <span class="n">dec_embeddings</span><span class="p">,</span> <span class="n">encoder_state</span><span class="p">,</span> <span class="n">target_vocab_size</span><span class="p">,</span> 
                                                 <span class="n">sequence_length</span><span class="p">,</span> <span class="n">rnn_size</span><span class="p">,</span> <span class="n">num_layers</span><span class="p">,</span> <span class="n">target_vocab_to_int</span><span class="p">,</span> <span class="n">keep_prob</span><span class="p">)</span>
